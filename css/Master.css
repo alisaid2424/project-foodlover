@@ -163,7 +163,7 @@ header .nav li a:hover {
   transform: translate(-50%, -50%);
   text-align: center;
   width: 700px;
-  max-width: 100%;
+  max-width: 95%;
   color: white;
 }
 .landing .text h1 {
@@ -318,7 +318,13 @@ header .nav li a:hover {
 .menu-items .item {
   display: flex;
   align-items: center;
+  gap: 20px;
   margin-bottom: 30px;
+}
+@media (max-width: 767px) {
+  .menu-items .item {
+    flex-direction: column;
+  }
 }
 .menu-items .item img {
   width: 80px;
@@ -343,6 +349,11 @@ header .nav li a:hover {
   line-height: 1.7;
   color: #333;
   font-weight: 500;
+}
+@media (max-width: 767px) {
+  .menu-items .item p {
+    text-align: center;
+  }
 }
 .menu-items .btn {
   background-color: #e4b95b;
@@ -394,6 +405,11 @@ header .nav li a:hover {
   color: white;
   font-size: 40px;
   margin-bottom: 60px;
+}
+@media (max-width: 767px) {
+  .gallery h2 {
+    font-size: 30px;
+  }
 }
 .gallery .img-gallery {
   display: flex;
@@ -528,7 +544,7 @@ footer {
 }
 @media (max-width: 767px) {
   footer {
-    font-size: 13px;
+    font-size: 11px;
   }
 }
 footer span {
